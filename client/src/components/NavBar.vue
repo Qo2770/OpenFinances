@@ -1,6 +1,6 @@
 <template>
   <div id="navbar">
-    <nav class="nav-extended">
+    <nav class="nav-extended teal lighten-1">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo center">OpenFinances</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
