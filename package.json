@@ -4,8 +4,10 @@
   "description": "A simple finance management system with the option to publish certain financial posts",
   "main": "app.js",
   "scripts": {
-    "start": "echo \"Error: no start specified\" && exit 1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app",
+    "dev": "concurrently \"nodemon app\" \"cd client && npm run serve\"",
+    "test": "concurrently \"nodemon app\" \"cd client && npm run serve\"",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,9 @@
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "standard-version": "^4.3.0",
+    "concurrently": "^3.5.0"
   }
 }
