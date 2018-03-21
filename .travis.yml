@@ -6,3 +6,9 @@ install:
 - cd client/ && yarn install && cd ../
 script:
 - cd client/ && yarn build
+deploy:
+  provider: heroku
+  api_key:
+    secure: jthxiK3Dv2zjncJRs22DTCmeLSMIJD8gL7zSNz/EYlk6g88m1a3wOKRNg+hntFA/OnXX4+n3W28nSs4BMPl9gV+iN5WPhwT8jAbf7d2lFlJ8CTSLJo5x8X+xG03f4LhZu2/1pXoqEpgJ8hoAj2HVXGwygyGaBZYBeXfBBjSwbLlNy9Zsq1MkRDjscEK2WGCLtI97TO2+T24xjc1ZlHRbl1zFkvOCjh7r3KpN3OptYKOgfjIkXPkO2Fzh6aCpby8y9Rl27geDdqjWHHnNBu7eyCVNQ6Mtc5j7GSl8rIVP1s29gU3VRhSMrWEr2gHKk4ltp8jvZJ7TgW8DZiQxqg76C4OXMSrcyTJvo8dotyHcqNSRwt6j0zfu++bynLsdmEIDorfMOnzlw0RgxbVmOIv3IlFAYZqwqg/FnypYqJ/LqblBMuwSV26LbcWiZjWvA4e9T0XVrWoenx4CeQE/dkND5IIEFe3/myX9gdTPW21WoOHlN+FF0IdiKguYCWxfyzknO2SeQOP5zgLANL3j/GhFTEcTIB/+4yIDUDdoVPtI4OAd4Mdxt/22aw88r6BKrT32JkX4dN09gqV9ufUx76DUNVORmJmy7mW+E5dJOz36v2V8meh/KQz7iopcX+QDY4eyU5CCy1RCB30krv9bu3hNzJFcVbFNRDSlGbXGC6KuHgg=
+  app: openfinances
+  on: master
