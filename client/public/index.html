@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="shortcut icon" href="<%= webpackConfig.output.publicPath %>favicon.ico">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
     <title>OpenFinances</title>
   </head>
   <body>
@@ -13,5 +26,15 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <!-- JQuery !-->
+    <script charset="utf-8">
+
+      $(document).ready(function(){
+        // Activate the side menu
+        $(".button-collapse").sideNav();
+      });
+
+    </script>
   </body>
 </html>
