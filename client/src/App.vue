@@ -1,14 +1,13 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
-    <div class="container" id="main">
-
-    </div>
+    <!--  All pages will be injected by vue router -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import NavBar from './components/NavBar';
+import NavBar from './components/Nav/NavBar';
 
 export default {
   name: 'app',
