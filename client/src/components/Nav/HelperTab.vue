@@ -2,7 +2,7 @@
   <div id="helpertab">
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
-        <li class="tab" v-for="tab in tabs"><a href="/log">{{ tab.title }}</a></li>
+        <li class="tab" v-for="tab in tabs" :key="tab.title"><a href="/log">{{ tab.title }}</a></li>
       </ul>
     </div>
   </div>
