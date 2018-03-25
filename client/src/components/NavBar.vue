@@ -19,6 +19,7 @@
           <li class="hide-on-large-only"><a href="/signup">Sign up</a></li>
         </ul>
       </div>
+      <HelperTab></HelperTab>
     </nav>
   </div>
 </template>
