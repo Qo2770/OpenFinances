@@ -11,7 +11,7 @@
             <div class="md-layout-item md-small-size-100">
               <md-field>
                 <label for="project-name">Project Name</label>
-                <md-input name="first-name" id="first-name" required />
+                <md-input name="project-name" id="project-name" required />
               </md-field>
 
               <div>
