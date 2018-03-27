@@ -5,11 +5,12 @@ import 'vue-material/dist/vue-material.css'
 
 // THEMES
 import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/black-green-light.css' // This line here
+import 'vue-material/dist/theme/default.css' // This line here
 
 
 // Components
 import MainDashboard from './components/Dashboard/Main'
+import AddProject from './components/Projects/AddProject'
 import App from './App.vue'
 
 Vue.config.productionTip = false
@@ -24,7 +25,8 @@ const router = new VueRouter({
     { path: '/', component: null },
     { path: '/projects/:project', name: 'projects', component: MainDashboard },
     { path: '/projects/:project/charts', name: 'charts', component: null },
-    { path: '/projects/:project/settings', name: 'settings', component: null }
+    { path: '/projects/:project/settings', name: 'settings', component: null },
+    { path: '/addproject', component: AddProject }
   ]
 })
 
