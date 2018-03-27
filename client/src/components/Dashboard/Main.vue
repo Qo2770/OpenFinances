@@ -1,23 +1,6 @@
 <template>
   <div id="main-dashboard">
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
-    HI! I'm the dashboard!<br>
+    HI! I'm the dashboard of project {{ $route.params.project }}
   </div>
 </template>
 

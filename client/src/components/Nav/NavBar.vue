@@ -3,19 +3,12 @@
     <md-app style="height: 100vh;">
       <md-app-toolbar class="md-accent" md-elevation="1">
         <div class="md-toolbar-row">
-          <!-- <md-button class="md-icon-button" @click="toggleMenu" v-if="!menuVisible">
-            <md-icon>menu</md-icon>
-          </md-button>
-          <h3 class="md-title center" style="flex: 1">OpenFinances</h3>
-          <md-button class="md-small-hide">Login</md-button>
-          <md-button class="md-primary md-small-hide">Sign up</md-button> -->
-
           <div class="md-toolbar-section-start">
             <md-button class="md-icon-button" @click="menuVisible = !menuVisible">
               <md-icon>menu</md-icon>
             </md-button>
 
-            <div class="md-title center">OpenFinances</div>
+            <router-link class="md-title center" style="text-decoration: none;" to="/">OpenFinances</router-link>
           </div>
 
           <md-menu md-direction="bottom-end" class="md-toolbar-section-end">
@@ -29,12 +22,12 @@
           </md-menu>
         </div>
 
-        <div class="md-toolbar-row">
-          <md-tabs class="md-transparent" md-alignment="fixed">
-            <md-tab id="tab-home" md-label="Home"></md-tab>
-            <md-tab id="tab-pages" md-label="Pages"></md-tab>
-            <md-tab id="tab-posts" md-label="Posts"></md-tab>
-            <md-tab id="tab-favorites" md-label="Favorites"></md-tab>
+        <div class="md-toolbar-row" style="width: 100%;" v-if="$route.params.project">
+          <md-tabs class="md-transparent" md-alignment="left" style="width: 100%;">
+            <md-tab id="tab-home" md-label="Dashboard" md-icon="dashboard" :to="{ name: 'projects', params: {project: $route.params.project } }"></md-tab>
+            <md-tab id="tab-pages" md-label="Charts" md-icon="insert_chart" :to="{ name: 'charts', params: {project: $route.params.project } }"></md-tab>
+            <md-tab id="tab-posts" md-label="Settings" md-icon="settings" :to="{ name: 'settings', params: {project: $route.params.project } }"></md-tab>
+            <md-tab id="tab-favorites" md-label="Favorites" md-icon="dashboard" :to="{ name: 'dashboard', params: {project: $route.params.project } }"></md-tab>
           </md-tabs>
         </div>
       </md-app-toolbar>

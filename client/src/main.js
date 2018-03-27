@@ -21,8 +21,10 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   routes: [
     // dynamic segments start with a colon
-    { path: '/', component: MainDashboard },
-    { path: '/projects/:project', name: 'projects', component: null }
+    { path: '/', component: null },
+    { path: '/projects/:project', name: 'projects', component: MainDashboard },
+    { path: '/projects/:project/charts', name: 'charts', component: null },
+    { path: '/projects/:project/settings', name: 'settings', component: null }
   ]
 })
 
