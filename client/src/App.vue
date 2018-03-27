@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <NavBar></NavBar>
-    <!--  All pages will be injected by vue router -->
-    <router-view></router-view>
+      <NavBar></NavBar>
   </div>
 </template>
 
@@ -21,4 +19,7 @@ export default {
 #app {
 
 }
+</style>
+
+<style lang="scss">
 </style>
