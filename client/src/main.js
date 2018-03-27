@@ -10,7 +10,12 @@ import 'vue-material/dist/theme/default.css' // This line here
 
 // Components
 import MainDashboard from './components/Dashboard/Main'
+
 import AddProject from './components/Projects/AddProject'
+
+import Login from './components/Users/Login'
+import Signup from './components/Users/Signup'
+
 import App from './App.vue'
 
 Vue.config.productionTip = false
@@ -26,7 +31,9 @@ const router = new VueRouter({
     { path: '/projects/:project', name: 'projects', component: MainDashboard },
     { path: '/projects/:project/charts', name: 'charts', component: null },
     { path: '/projects/:project/settings', name: 'settings', component: null },
-    { path: '/addproject', component: AddProject }
+    { path: '/addproject', component: AddProject },
+    { path: '/login', component: Login },
+    { path: '/signup', component: Signup }
   ]
 })
 
