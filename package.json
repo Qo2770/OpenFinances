@@ -4,7 +4,7 @@
   "description": "A simple finance management system with the option to publish certain financial posts",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./app.js",
     "dev": "concurrently \"nodemon app\" \"cd client && npm run serve\"",
     "test": "concurrently \"nodemon app\" \"cd client && npm run serve\"",
     "release": "standard-version"
