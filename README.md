@@ -2,7 +2,7 @@
 A simple, open-source finance management system to manage simple ventures.  
   
 # Demo  
-A live demo can be viewed at (www.openfinances.herokuapp.com)[https://openfinances.herokuapp.com]. This demo will automatically update when a new version is released. Currently, it merely includes a basic front-end.  
+A live demo can be viewed at [www.openfinances.herokuapp.com](https://openfinances.herokuapp.com). This demo will automatically update when a new version is released. Currently, it merely includes a basic front-end.  
 
 # Features  
 The System will be able to manage cashflow, create simple income statements and quickly create charts to visualize data.  
