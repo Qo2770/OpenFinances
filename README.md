@@ -12,10 +12,10 @@ Optionally, it will provide a method to make certain financial items public.
 This project will utilize an Node.js/Express backend as well as MongoDB. The front-end will be made using Vue.js. The project will also use Travis.ci for continous integration as well as Heroku for hosting.
 
 # Run Project  
-To run this project locally, you must first install [Node.js](www.nodejs.org). You may use `yarn` instead of npm, both should work.  
+To run this project locally, you must first install [Node.js](www.nodejs.org). You may use `yarn` instead of `npm`, both should work.  
   
 1. Clone this repository to your computer using `git clone https://github.com/Qo2770/OpenFinances.git`. 
-2. Navigate into the project folder and enter `yarn` (or `npm install`)  
+2. Navigate into the project folder and enter `yarn install` (or `npm install`)  
 3. Goto the client directory and run the same command as in 2.  
 4. Go back to the root directory and run `npm run dev`  
 5. Open the browser and enter `localhost:3000`  
