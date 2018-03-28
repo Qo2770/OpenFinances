@@ -2,9 +2,10 @@
   "name": "client",
   "version": "0.2.1",
   "private": true,
-  "main": "app.js",
+  "main": "../app.js",
+  "web": "node ../app.js",
   "scripts": {
-    "start": "node ./app.js",
+    "start": "node ../app.js",
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
