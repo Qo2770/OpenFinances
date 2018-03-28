@@ -1,14 +1,13 @@
 // app.js
 var express = require('express');
 var path = require('path');
-var serveStatic = require('serve-static');
 
 app = express();
 
-app.use(serveStatic(__dirname + "/client/dist"));
+app.use(express.static(__dirname + "/client/dist"));
 
 app.use("/", (req, res) => {
-  res.send(__dirname + "/client/dist/index.html");
+  res.render('index');
 })
 
 var port = process.env.PORT || 3000;
